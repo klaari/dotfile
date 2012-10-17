@@ -96,4 +96,7 @@ set colorcolumn=85
 " Colors
 syntax enable
 set background=dark
+set t_Co=256
+"let g:solarized_termcolors=16
+let g:solarized_termcolors=256
 colorscheme solarized
