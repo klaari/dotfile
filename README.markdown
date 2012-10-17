@@ -1,4 +1,4 @@
-## Just my dotfiles
+## .dotfiles
 
 ### Install
 Slightly modified install script from https://github.com/sontek/dotfiles/
