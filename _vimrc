@@ -73,7 +73,7 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 " ;; to replace escape       
-imap ;; <ESC>
+imap jk <ESC>
 
 " ctrl+tab tab navigation
 map <c-tab> :tabnext<cr>

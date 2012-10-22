@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/ktl/public_html/ultraaaniseura/ua_hub/ci/application/modules'
 let g:netrw_dirhist_2='/home/ktl/public_html/ultraaaniseura/ua_hub/ci/application'
 let g:netrw_dirhist_3='/home/ktl/htdocs/movika/callmedia/ci/application/modules/application'
+let g:netrw_dirhist_4='/home/ktl/htdocs/haicash/app/ci/application/modules/invoice/views'
