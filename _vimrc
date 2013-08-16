@@ -1,9 +1,9 @@
 filetype off                    " force reloading *after* pathogen loaded
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
 filetype plugin indent on       " enable detection, plugins and indenting in one step
 syntax on
 
+let $PATH=substitute(system("echo \$PATH"), "\r\*\n", "", "g")
 " Disabled Vi support
 set nocompatible
 
