@@ -47,6 +47,8 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias install='sudo apt-get install'
 alias remove='sudo apt-get remove'
 alias update='sudo apt-get update'
+alias intar='tar -zcvf'
+alias untar='tar -zxvf'
 
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
