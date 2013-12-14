@@ -51,7 +51,7 @@ set guioptions-=T  "remove toolbar
 set lbr
 
 " Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
+omap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " Clear search highligth
 nnoremap <leader><space> :noh<cr>
@@ -101,3 +101,5 @@ set t_Co=256
 "let g:solarized_termcolors=16
 let g:solarized_termcolors=256
 colorscheme solarized
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
