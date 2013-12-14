@@ -59,22 +59,25 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 " disable arrow keys
+" remap arrow keys
+nnoremap <left> :bprev<CR>
+nnoremap <right> :bnext<CR>
 map <up> <nop>
 map <down> <nop>
-map <left> <nop>
-map <right> <nop>
 imap <up> <nop>
 imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-" ;; to replace escape       
+" jk  to replace escape       
 imap jk <ESC>
+imap kj <ESC>
+
+" reselect last paste
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
 " ctrl+tab tab navigation
 map <c-tab> :tabnext<cr>
@@ -83,6 +86,11 @@ map <c-s-tab> :tabprevious<cr>
 imap <c-s-tab> <esc>:tabprevious<cr>i
 map <c-t> :tabnew<cr>
 imap <c-t> <esc>:tabnew<cr>i
+
+" find current word in quickfix
+nnoremap <leader>fw :execute "vimgrep ".expand("<cword>")." %"<cr>:copen<cr>
+" find last search in quickfix
+nnoremap <leader>ff :execute 'vimgrep /'.@/.'/g %'<cr>:copen<cr>
 
 au FocusLost * :wa  " Save on losing focus
 
@@ -101,6 +109,19 @@ set t_Co=256
 "let g:solarized_termcolors=16
 let g:solarized_termcolors=256
 colorscheme solarized
+
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 "-----------------------------------------------------------------------------
