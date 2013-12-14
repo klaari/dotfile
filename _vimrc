@@ -46,7 +46,7 @@ set laststatus=2
 set relativenumber
 set undofile
 set guioptions-=T  "remove toolbar
-
+set macmeta
 " Wrap text instead of being on one line
 set lbr
 
