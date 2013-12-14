@@ -56,6 +56,9 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " Clear search highligth
 nnoremap <leader><space> :noh<cr>
 
+Tcomment plugin
+map <leader>c <c-_><c-_>
+
 nnoremap <tab> %
 vnoremap <tab> %
 " disable arrow keys
