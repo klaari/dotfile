@@ -51,7 +51,7 @@ set guioptions-=T  "remove toolbar
 set lbr
 
 " Quickly edit/reload the vimrc file
-omap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " Clear search highligth
 nnoremap <leader><space> :noh<cr>
