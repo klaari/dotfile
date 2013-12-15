@@ -1,6 +1,7 @@
 filetype off                    " force reloading *after* pathogen loaded
 execute pathogen#infect()
 :call pathogen#helptags()
+call yankstack#setup()
 filetype plugin indent on       " enable detection, plugins and indenting in one step
 syntax on
 
