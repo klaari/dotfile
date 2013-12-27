@@ -1,7 +1,6 @@
 filetype off                    " force reloading *after* pathogen loaded
 execute pathogen#infect()
-:call pathogen#helptags()
-call yankstack#setup()
+Helptags
 filetype plugin indent on       " enable detection, plugins and indenting in one step
 syntax on
 
@@ -47,7 +46,6 @@ set laststatus=2
 set relativenumber
 set undofile
 set guioptions-=T  "remove toolbar
-set macmeta
 " Wrap text instead of being on one line
 set lbr
 
@@ -57,7 +55,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " Clear search highligth
 nnoremap <leader><space> :noh<cr>
 
-Tcomment plugin
+"Tcomment plugin
 map <leader>c <c-_><c-_>
 
 nnoremap <tab> %
@@ -75,6 +73,9 @@ nnoremap k gk
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
+
+" Disable ZZ which writes a file and closes vim when you try to hit >>
+map ZZ <nop>
 
 " jk  to replace escape       
 imap jk <ESC>
