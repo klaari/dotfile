@@ -20,6 +20,9 @@ set expandtab
 let mapleader=","
 let maplocalleader="\\"
 
+set backupdir=~/.vimswap//,/var/tmp//,/tmp//,.
+set directory=~/.vimbackup//,/var/tmp//,/tmp//,.
+
 " Basics
 set encoding=utf-8
 set scrolloff=5                 " Minimum number of screen lines above and below the cursor.
