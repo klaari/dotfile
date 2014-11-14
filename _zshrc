@@ -49,6 +49,8 @@ alias remove='sudo apt-get remove'
 alias update='sudo apt-get update'
 alias intar='tar -zcvf'
 alias untar='tar -zxvf'
+alias crashPlanDesktop='sudo /usr/local/crashplan/bin/CrashPlanDesktop'
+alias crashPlanEngine='sudo /usr/local/crashplan/bin/CrashPlanEngine start'
 
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
