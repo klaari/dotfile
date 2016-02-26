@@ -1,6 +1,44 @@
-filetype off                    " force reloading *after* pathogen loaded
-execute pathogen#infect()
-Helptags
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+" call vundle#begin('~/some/path/here')
+"
+" let Vundle manage Vundle, required
+
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'rking/ag.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'wookiehangover/jshint.vim'
+Plugin 'tmhedberg/matchit'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'godlygeek/tabular'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-repeat'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'tpope/vim-surround'
+Plugin 'ervandew/supertab'
+Plugin 'bling/vim-airline'
+Plugin 'majutsushi/tagbar'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'bronson/vim-trailing-whitespace'
+
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()  
+
+" Helptags
 filetype plugin indent on       " enable detection, plugins and indenting in one step
 syntax on
 
@@ -57,6 +95,9 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " Clear search highligth
 nnoremap <leader><space> :noh<cr>
+
+" Toggle tagbar with f8
+nmap <F8> :TagbarToggle<CR>
 
 "Tcomment plugin
 map <leader>c <c-_><c-_>
@@ -153,6 +194,19 @@ map ,ff :CtrlPCurFile<cr>
 map ,fr :CtrlP<cr>
 map ,fm :CtrlPMixed<cr>
 
+
+
+"-----------------------------------------------------------------------------
+" Syntastic recommended defaults
+"-----------------------------------------------------------------------------
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "-----------------------------------------------------------------------------
 " vim-gitgutter
