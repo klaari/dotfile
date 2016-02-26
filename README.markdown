@@ -2,7 +2,7 @@
 
 ### Requirements
 
-ag.vim:_the silversearcher https://github.com/ggreer/the_silver_searcher#installing
+ag.vim: the silversearcher https://github.com/ggreer/the_silver_searcher#installing
 
     sudo apt-get install silversearcher-ag
 
@@ -19,4 +19,5 @@ Slightly modified install script from https://github.com/sontek/dotfiles/
 
 Creates symlinks for dotfiles in dotfile dir.
 
-    ~/dotfile/install.sh
+    git clone https://github.com/klaari/dotfile.git
+    cd ~/dotfile && ./install.sh
