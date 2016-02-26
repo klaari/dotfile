@@ -8,7 +8,7 @@ ag.vim: the silversearcher https://github.com/ggreer/the_silver_searcher#install
 
 jshint.vim: jshin http://jshint.com/install/
 
-    npm install -g jshint
+    sudo npm install -g jshint
 
 tagbar: exuberant-ctags
 
