@@ -15,9 +15,8 @@ tagbar: exuberant-ctags
     sudo apt-get install exuberant-ctags
 
 ### Install
-Slightly modified install script from https://github.com/sontek/dotfiles/
 
 Creates symlinks for dotfiles in dotfile dir.
 
-    git clone https://github.com/klaari/dotfile.git
+    git clone https://github.com/klaari/dotfile.git ~/dotfile
     cd ~/dotfile && ./install.sh
