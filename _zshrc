@@ -52,6 +52,10 @@ alias untar='tar -zxvf'
 alias crashPlanDesktop='sudo /usr/local/crashplan/bin/CrashPlanDesktop'
 alias crashPlanEngine='sudo /usr/local/crashplan/bin/CrashPlanEngine start'
 
+alias boxup='cd /home/ktl/Code/scotchbox/ && vagrant up && cd -'
+alias boxdown='cd /home/ktl/Code/scotchbox/ && vagrant suspend && cd -'
+alias boxssh='cd /home/ktl/Code/scotchbox/ && vagrant ssh && cd -'
+
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
 setopt incappendhistory 
