@@ -15,7 +15,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
-Plugin 'wookiehangover/jshint.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -175,7 +174,7 @@ endif
 let g:ag_working_path_mode="r"
 
 " Use Silver Searcher with ack if installed.
-if executable('ag')
+ifvexecutable('ag')
   let g:ackprg = 'ag --vimgrep --smart-case'
   cnoreabbrev ag Ack
   cnoreabbrev aG Ack
