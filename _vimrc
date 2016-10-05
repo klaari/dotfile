@@ -12,14 +12,14 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'rking/ag.vim'
+Plugin 'mileszs/ack.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'wookiehangover/jshint.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'godlygeek/tabular'
+"Plugin 'godlygeek/tabular'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
@@ -36,7 +36,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 
 
 " All of your Plugins must be added before the following line
-call vundle#end()  
+call vundle#end()
 
 " Helptags
 filetype plugin indent on       " enable detection, plugins and indenting in one step
@@ -121,7 +121,7 @@ vnoremap <F1> <ESC>
 " Disable ZZ which writes a file and closes vim when you try to hit >>
 map ZZ <nop>
 
-" jk  to replace escape       
+" jk  to replace escape
 imap jk <ESC>
 imap kj <ESC>
 
@@ -169,6 +169,18 @@ if executable('ag')
 
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
+endif
+
+"start searching from your project root instead of the cwd
+let g:ag_working_path_mode="r"
+
+" Use Silver Searcher with ack if installed.
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep --smart-case'
+  cnoreabbrev ag Ack
+  cnoreabbrev aG Ack
+  cnoreabbrev Ag Ack
+  cnoreabbrev AG Ack
 endif
 
 
