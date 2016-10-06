@@ -168,20 +168,14 @@ if executable('ag')
 
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
-endif
-
-"start searching from your project root instead of the cwd
-let g:ag_working_path_mode="r"
-
-" Use Silver Searcher with ack if installed.
-ifvexecutable('ag')
+  "start searching from your project root instead of the cwd
+  let g:ag_working_path_mode="r"
   let g:ackprg = 'ag --vimgrep --smart-case'
   cnoreabbrev ag Ack
   cnoreabbrev aG Ack
   cnoreabbrev Ag Ack
   cnoreabbrev AG Ack
 endif
-
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 "-----------------------------------------------------------------------------
