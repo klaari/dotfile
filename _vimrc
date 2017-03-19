@@ -34,6 +34,8 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'skwp/greplace.vim'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'arnaud-lb/vim-php-namespace'
+Plugin 'janko-m/vim-test'
+
 
 
 
@@ -242,3 +244,14 @@ let NERDTreeIgnore=[ '\.ncb$', '\.suo$', '\.vcproj\.RIMNET', '\.obj$',
                    \ '\.ilk$', '^BuildLog.htm$', '\.pdb$', '\.idb$',
                    \ '\.embed\.manifest$', '\.embed\.manifest.res$',
                    \ '\.intermediate\.manifest$', '^mt.dep$' ]
+
+"-----------------------------------------------------------------------------
+" Vim Test Plugin Settings
+"-----------------------------------------------------------------------------
+
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+
