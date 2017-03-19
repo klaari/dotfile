@@ -20,12 +20,7 @@ function unlink_file {
     fi
 }
 
-if [ "$1" = "vim" ]; then
-    for i in _vim*
-    do
-       link_file $i
-    done
-elif [ "$1" = "restore" ]; then
+if [ "$1" = "restore" ]; then
     for i in _*
     do
         unlink_file $i
@@ -38,5 +33,6 @@ else
     done
 fi
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
+mkdir -p _vim
+#git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+#vim +PluginInstall +qall

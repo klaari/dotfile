@@ -39,7 +39,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 export PATH=/usr/local/bin/node:$PATH
 export PATH=~/dotfiles/_vim/bundle/syntastic/syntax_checkers/javascript:$PATH
-export PATH=~/.composer/vendor/bin:$PATH
+export PATH=$HOME/.composer/vendor/bin:$PATH
 
 alias img-compress='/home/ktl/scripts/wesley.pl'
 alias gvim="UBUNTU_MENUPROXY=0 gvim --remote-silent"
@@ -52,6 +52,10 @@ alias intar='tar -zcvf'
 alias untar='tar -zxvf'
 alias crashPlanDesktop='sudo /usr/local/crashplan/bin/CrashPlanDesktop'
 alias crashPlanEngine='sudo /usr/local/crashplan/bin/CrashPlanEngine start'
+
+alias boxup='cd /home/ktl/Code/scotchbox/ && vagrant up && cd -'
+alias boxdown='cd /home/ktl/Code/scotchbox/ && vagrant suspend && cd -'
+alias boxssh='cd /home/ktl/Code/scotchbox/ && vagrant ssh && cd -'
 
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
