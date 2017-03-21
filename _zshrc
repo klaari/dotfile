@@ -40,6 +40,9 @@ export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/u
 export PATH=/usr/local/bin/node:$PATH
 export PATH=~/dotfiles/_vim/bundle/syntastic/syntax_checkers/javascript:$PATH
 export PATH=$HOME/.composer/vendor/bin:$PATH
+export ANDROID_HOME=~/Android/Sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 alias img-compress='/home/ktl/scripts/wesley.pl'
 alias gvim="UBUNTU_MENUPROXY=0 gvim --remote-silent"
