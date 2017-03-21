@@ -1,0 +1,16 @@
+[alias]
+	unstage = reset HEAD --
+    append = commit --amend --no-edit
+    lola = log --graph --oneline --decorate --all
+[difftool]
+    prompt = false
+
+[diff]
+    tool = meld
+    guitool = meld
+
+[difftool "meld"]
+    path = /usr/bin/meld
+[user]
+	email = kari.laari@gmail.com
+	name = Kari
