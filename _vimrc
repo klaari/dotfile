@@ -184,7 +184,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 "-----------------------------------------------------------------------------
 " CtrlP Settings
 "-----------------------------------------------------------------------------
-let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:100,results:100'
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:50,results:50'
 let g:ctrlp_switch_buffer = 'E'
 let g:ctrlp_tabpage_position = 'c'
 let g:ctrlp_working_path_mode = 'rc'
