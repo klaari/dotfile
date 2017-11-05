@@ -38,7 +38,6 @@ Plugin 'janko-m/vim-test'
 
 
 
-
 " All of your Plugins must be added before the following line
 call vundle#end()
 
@@ -157,10 +156,10 @@ set colorcolumn=85
 
 " Colors
 syntax enable
-set background=dark
 set t_Co=256
-"let g:solarized_termcolors=16
+let g:solarized_termtrans = 1
 let g:solarized_termcolors=256
+set background=dark
 colorscheme solarized
 
 " The Silver Searcher
