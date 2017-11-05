@@ -41,6 +41,7 @@ export PATH=/usr/local/bin/node:$PATH
 export PATH=~/dotfiles/_vim/bundle/syntastic/syntax_checkers/javascript:$PATH
 export PATH=$HOME/.composer/vendor/bin:$PATH
 export ANDROID_HOME=~/Android/Sdk
+export PATH="./vendor/bin:$PATH"
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
