@@ -35,8 +35,8 @@ Plugin 'skwp/greplace.vim'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'janko-m/vim-test'
+Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
-
 
 
 " All of your Plugins must be added before the following line
