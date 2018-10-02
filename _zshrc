@@ -31,7 +31,7 @@ ZSH_THEME="pygmalion"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git nvm Composer web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -60,6 +60,8 @@ alias crashPlanEngine='sudo /usr/local/crashplan/bin/CrashPlanEngine start'
 alias boxup='cd /home/ktl/Code/scotchbox/ && vagrant up && cd -'
 alias boxdown='cd /home/ktl/Code/scotchbox/ && vagrant suspend && cd -'
 alias boxssh='cd /home/ktl/Code/scotchbox/ && vagrant ssh && cd -'
+
+alias phpunit="./vendor/phpunit/phpunit/phpunit"
 
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
