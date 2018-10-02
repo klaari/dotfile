@@ -2,4 +2,7 @@ _vim/.netrwhist
 *.un~
 *.swp
 *.swo
-_vim/bundle
+_vim
+_backup
+_swp
+_undo

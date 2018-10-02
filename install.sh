@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+
 function link_file {
     source="${PWD}/$1"
     target="${HOME}/${1/_/.}"
@@ -35,5 +37,14 @@ fi
 
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 mkdir -p "$parent_path/_vim"
+mkdir -p "$parent_path/_backup"
+mkdir -p "$parent_path/_swp"
+mkdir -p "$parent_path/_undo"
+
+link_file _vim
+link_file _backup
+link_file _undo
+link_file _swp
+
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
