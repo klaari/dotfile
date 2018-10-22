@@ -37,6 +37,7 @@ Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'janko-m/vim-test'
 Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
+Plugin 'prettier/vim-prettier'
 
 
 " All of your Plugins must be added before the following line
@@ -260,4 +261,10 @@ nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
+
+let g:prettier#config#tab_width = 4
+" Run Prettier before saving
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+
 
