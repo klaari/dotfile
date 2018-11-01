@@ -44,6 +44,7 @@ export ANDROID_HOME=~/Android/Sdk
 export PATH="./vendor/bin:$PATH"
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=~/anaconda3/bin:$PATH
 
 alias img-compress='/home/ktl/scripts/wesley.pl'
 alias gvim="UBUNTU_MENUPROXY=0 gvim --remote-silent"
