@@ -44,7 +44,6 @@ export ANDROID_HOME=~/Android/Sdk
 export PATH="./vendor/bin:$PATH"
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
-export PATH=~/anaconda3/bin:$PATH
 
 alias img-compress='/home/ktl/scripts/wesley.pl'
 alias gvim="UBUNTU_MENUPROXY=0 gvim --remote-silent"
@@ -91,3 +90,5 @@ extract () {
       echo "'$1' is not a valid file!"
   fi
 }
+. /home/ktl/anaconda3/etc/profile.d/conda.sh
+conda activate
