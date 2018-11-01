@@ -39,6 +39,15 @@ Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
 Plugin 'prettier/vim-prettier'
 
+Plugin 'Shougo/deoplete.nvim'
+if !has('nvim')
+  Plugin 'roxma/nvim-yarp'
+  Plugin 'roxma/vim-hug-neovim-rpc'
+endif
+
+Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()
