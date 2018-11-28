@@ -31,19 +31,22 @@ ZSH_THEME="pygmalion"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git nvm Composer web-search)
+plugins=(git zsh-nvm Composer web-search)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-export PATH=/usr/local/bin/node:$PATH
+# export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+# export PATH=/usr/local/bin/node:$PATH
 export PATH=~/dotfiles/_vim/bundle/syntastic/syntax_checkers/javascript:$PATH
-export PATH=$HOME/.composer/vendor/bin:$PATH
-export ANDROID_HOME=~/Android/Sdk
-export PATH="./vendor/bin:$PATH"
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+# export PATH=$HOME/.composer/vendor/bin:$PATH
+# export ANDROID_HOME=~/Android/Sdk
+# export PATH="./vendor/bin:$PATH"
+# export PATH=${PATH}:${ANDROID_HOME}/tools
+# export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+# export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$PATH
+
+
 
 alias img-compress='/home/ktl/scripts/wesley.pl'
 alias gvim="UBUNTU_MENUPROXY=0 gvim --remote-silent"
@@ -90,5 +93,5 @@ extract () {
       echo "'$1' is not a valid file!"
   fi
 }
-. /home/ktl/anaconda3/etc/profile.d/conda.sh
+. /home/kari/anaconda3/etc/profile.d/conda.sh
 conda activate
