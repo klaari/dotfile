@@ -10,12 +10,6 @@ tagbar: exuberant-ctags
 
     sudo apt-get install exuberant-ctags
 
-eslint
-
-    npm install -g eslint
-    npm install -g babel-eslint
-    npm install -g eslint-plugin-react
-
 Zsh
 
     sudo apt-get -y install zsh
@@ -24,6 +18,14 @@ Zsh
 Oh My Zsh
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+Node.js with https://github.com/creationix/nvm#installation
+
+eslint
+
+    npm install -g eslint
+    npm install -g babel-eslint
+    npm install -g eslint-plugin-react
 
 
 ### Install Vim plugins and symlink config files
