@@ -39,6 +39,8 @@ Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
 Plugin 'prettier/vim-prettier'
 Plugin 'styled-components/vim-styled-components'
+Plugin 'nelstrom/vim-visual-star-search'
+
 
 
 Plugin 'Shougo/deoplete.nvim'
