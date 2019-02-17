@@ -38,6 +38,8 @@ Plugin 'janko-m/vim-test'
 Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
 Plugin 'prettier/vim-prettier'
+Plugin 'styled-components/vim-styled-components'
+
 
 Plugin 'Shougo/deoplete.nvim'
 if !has('nvim')
