@@ -40,8 +40,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'prettier/vim-prettier'
 Plugin 'styled-components/vim-styled-components'
 Plugin 'nelstrom/vim-visual-star-search'
-
-
+Plugin 'w0rp/ale'
 
 Plugin 'Shougo/deoplete.nvim'
 if !has('nvim')
@@ -228,15 +227,15 @@ map ,fm :CtrlPMixed<cr>
 "-----------------------------------------------------------------------------
 " Syntastic recommended defaults
 "-----------------------------------------------------------------------------
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+"
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_javascript_checkers = ['eslint']
 
 
 "-----------------------------------------------------------------------------
@@ -275,9 +274,36 @@ nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 
-let g:prettier#config#tab_width = 4
-" Run Prettier before saving
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 
+" Fix vue syntax highlight
+autocmd FileType vue syntax sync fromstart
+
+" let g:prettier#config#tab_width = 2
+" let g:prettier#config#single_quote = 'false'
+"Run Prettier before saving
+" let g:prettier#autoformat = 1
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.html PrettierAsync
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\ }
+let g:ale_fixers = {
+\   'vue': ['eslint'],
+\   'javascript': ['eslint'],
+\   'css': ['prettier'],
+\}
+
+let g:ale_linter_aliases = {'vue': ['vue', 'javascript']}
+let g:ale_linters = {'vue': ['eslint', 'vls']}
+
+let g:ale_linters_explicit = 1
+let g:ale_fix_on_save = 1
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+let g:ale_javascript_prettier_use_local_config = 1
+
+
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
 
