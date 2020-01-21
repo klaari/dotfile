@@ -53,6 +53,8 @@ Plugin 'Shougo/neosnippet-snippets'
 
 Plugin 'ncm2/ncm2'
 Plugin 'roxma/nvim-yarp'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'ianks/vim-tsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
