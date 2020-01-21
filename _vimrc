@@ -42,15 +42,17 @@ Plugin 'styled-components/vim-styled-components'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'w0rp/ale'
 
-Plugin 'Shougo/deoplete.nvim'
-if !has('nvim')
-  Plugin 'roxma/nvim-yarp'
-  Plugin 'roxma/vim-hug-neovim-rpc'
-endif
+" Plugin 'Shougo/deoplete.nvim'
+" if !has('nvim')
+"   Plugin 'roxma/nvim-yarp'
+"   Plugin 'roxma/vim-hug-neovim-rpc'
+" endif
 
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
 
+Plugin 'ncm2/ncm2'
+Plugin 'roxma/nvim-yarp'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -288,13 +290,15 @@ let g:ale_linters = {
 \   'javascript': ['eslint'],
 \ }
 let g:ale_fixers = {
-\   'vue': ['eslint'],
-\   'javascript': ['eslint'],
+\   'vue': ['eslint', 'prettier'],
+\   'javascript': ['eslint', 'prettier'],
 \   'css': ['prettier'],
+\   'html': ['prettier'], 
+\   'json': ['eslint'],
 \}
 
 let g:ale_linter_aliases = {'vue': ['vue', 'javascript']}
-let g:ale_linters = {'vue': ['eslint', 'vls']}
+let g:ale_linters = {'vue': ['eslint', 'vls'], 'javascript': ['eslint']}
 
 let g:ale_linters_explicit = 1
 let g:ale_fix_on_save = 1
@@ -304,6 +308,6 @@ let g:ale_javascript_prettier_use_local_config = 1
 
 
 
-" Use deoplete.
-let g:deoplete#enable_at_startup = 1
+" " Use deoplete.
+" let g:deoplete#enable_at_startup = 1
 
