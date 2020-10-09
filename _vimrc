@@ -288,15 +288,13 @@ autocmd FileType vue syntax sync fromstart
 " let g:prettier#autoformat = 1
 " autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.html PrettierAsync
 
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\ }
 let g:ale_fixers = {
-\   'vue': ['eslint', 'prettier'],
-\   'javascript': ['eslint', 'prettier'],
+\   'vue': ['eslint'],
+\   'javascript': ['eslint'],
 \   'css': ['prettier'],
-\   'html': ['prettier'], 
-\   'json': ['eslint'],
+\   'scss': ['prettier'],
+\   'html': ['eslint', 'prettier'],
+\   'json': ['prettier'],
 \}
 
 let g:ale_linter_aliases = {'vue': ['vue', 'javascript']}
