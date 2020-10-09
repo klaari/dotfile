@@ -41,6 +41,8 @@ Plugin 'prettier/vim-prettier'
 Plugin 'styled-components/vim-styled-components'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'w0rp/ale'
+Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'nelsyeung/twig.vim'
 
 " Plugin 'Shougo/deoplete.nvim'
 " if !has('nvim')
@@ -305,6 +307,14 @@ let g:ale_fix_on_save = 1
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_javascript_prettier_use_local_config = 1
+
+let g:php_cs_fixer_rules = "@PSR2"          " options: --rules (default:@PSR2)
+let g:php_cs_fixer_config_file = '.php_cs' " options: --config
+
+let g:php_cs_fixer_php_path = "php"               " Path to PHP
+let g:php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by default (<leader>pcd)
+let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
+let g:php_cs_fixer_verbose = 0
 
 
 
