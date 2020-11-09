@@ -23,9 +23,12 @@ Node.js with https://github.com/creationix/nvm#installation
 
 eslint
 
-    npm install -g eslint
-    npm install -g babel-eslint
-    npm install -g eslint-plugin-react
+    npm install -D prettier
+    npm install -D eslint
+    npm install -D babel-eslint
+    npm install -D eslint-plugin-react
+    npm install -D eslint-plugins-prettier
+    npm install -D eslint-config-prettier
 
 
 ### Install Vim plugins and symlink config files
