@@ -23,8 +23,10 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-repeat'
-" Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+Plugin 'epilande/vim-es2015-snippets'
+Plugin 'epilande/vim-react-snippets'
+" Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
 Plugin 'ervandew/supertab'
 Plugin 'bling/vim-airline'
@@ -43,15 +45,6 @@ Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'w0rp/ale'
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'nelsyeung/twig.vim'
-
-" Plugin 'Shougo/deoplete.nvim'
-" if !has('nvim')
-"   Plugin 'roxma/nvim-yarp'
-"   Plugin 'roxma/vim-hug-neovim-rpc'
-" endif
-
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
 
 Plugin 'ncm2/ncm2'
 Plugin 'roxma/nvim-yarp'
