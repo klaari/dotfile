@@ -262,6 +262,9 @@ let NERDTreeIgnore=[ '\.ncb$', '\.suo$', '\.vcproj\.RIMNET', '\.obj$',
                    \ '\.ilk$', '^BuildLog.htm$', '\.pdb$', '\.idb$',
                    \ '\.embed\.manifest$', '\.embed\.manifest.res$',
                    \ '\.intermediate\.manifest$', '^mt.dep$' ]
+" Open on  the right side
+let g:NERDTreeWinPos = "right"
+
 
 "-----------------------------------------------------------------------------
 " Vim Test Plugin Settings
