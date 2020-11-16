@@ -27,7 +27,7 @@ eslint
     npm install -D eslint
     npm install -D babel-eslint
     npm install -D eslint-plugin-react
-    npm install -D eslint-plugins-prettier
+    npm install -D eslint-plugin-prettier
     npm install -D eslint-config-prettier
 
 
