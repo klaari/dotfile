@@ -25,12 +25,12 @@ Node.js with https://github.com/creationix/nvm#installation
 
     npm install -D prettier
     npm install -D eslint
-    npm install -D babel-eslint
-    npm install -D eslint-plugin-react
     npm install -D eslint-plugin-prettier
     npm install -D eslint-config-prettier
-    
-.eslintrc.js
+    npm install -D babel-eslint
+    npm install -D eslint-plugin-react
+
+.eslintrc.js (react)
 ```
 module.exports = {
     root: true,
@@ -69,6 +69,29 @@ module.exports = {
         },
     },
 };
+```
+
+.eslintrc.json (vanilla js)
+```
+{
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "env": {
+    "es6": true
+  },
+  "plugins": ["prettier"],
+  "extends": ["plugin:prettier/recommended"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 4,
+        "trailingComma": "es5"
+      }
+    ]
+  }
+}
 ```
 
 
