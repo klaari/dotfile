@@ -300,8 +300,8 @@ let g:ale_linters = {'vue': ['eslint', 'vls'], 'javascript': ['eslint']}
 
 let g:ale_linters_explicit = 1
 let g:ale_fix_on_save = 1
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
+let g:ale_sign_error = '●'
+let g:ale_sign_warning = '.'
 let g:ale_javascript_prettier_use_local_config = 1
 
 let g:php_cs_fixer_rules = "@PSR2"          " options: --rules (default:@PSR2)
