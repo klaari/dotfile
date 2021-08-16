@@ -12,7 +12,7 @@
 [difftool "meld"]
     path = /usr/bin/meld
 [user]
-	email = kari.laari@gmail.com
+	email = kari@karin-atk.fi
 	name = Kari
 [core]
 	excludesfile = /Users/klaari/.global-gitignore
