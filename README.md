@@ -19,6 +19,10 @@ Oh My Zsh
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+fzf
+
+    sudo apt-get install fzf
+
 Node.js with https://github.com/creationix/nvm#installation
 
 #### eslint & prettier
