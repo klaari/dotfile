@@ -46,6 +46,8 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 # export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 # export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$PATH
 export PATH=/usr/local/Cellar/php71/7.1.14_25/bin:$PATH
+export PATH=$HOME/bin:$PATH
+
 
 
 alias img-compress='/home/ktl/scripts/wesley.pl'
