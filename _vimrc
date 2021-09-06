@@ -70,6 +70,10 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" Disable error sound
+set noerrorbells
+set vb t_vb=
+
 " Change the mapleader from \ to ,
 let mapleader=","
 let maplocalleader="\\"
