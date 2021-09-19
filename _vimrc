@@ -34,22 +34,16 @@ Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'skwp/greplace.vim'
-Plugin 'StanAngeloff/php.vim'
 Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'janko-m/vim-test'
-Plugin 'posva/vim-vue'
-Plugin 'pangloss/vim-javascript'
 Plugin 'prettier/vim-prettier'
-Plugin 'styled-components/vim-styled-components'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'w0rp/ale'
 Plugin 'stephpy/vim-php-cs-fixer'
-Plugin 'nelsyeung/twig.vim'
 
 Plugin 'ncm2/ncm2'
 Plugin 'roxma/nvim-yarp'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'ianks/vim-tsx'
+Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -280,9 +274,6 @@ nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 
-
-" Fix vue syntax highlight
-autocmd FileType vue syntax sync fromstart
 
 " let g:prettier#config#tab_width = 2
 " let g:prettier#config#single_quote = 'false'
