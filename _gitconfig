@@ -13,6 +13,6 @@
     path = /usr/bin/meld
 [user]
 	email = kari@karin-atk.fi
-	name = Kari
+	name = Kari Laari
 [core]
 	excludesfile = /Users/klaari/.global-gitignore
