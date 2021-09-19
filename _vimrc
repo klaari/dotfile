@@ -13,7 +13,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'scrooloose/nerdtree'
@@ -44,9 +43,20 @@ Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'ncm2/ncm2'
 Plugin 'roxma/nvim-yarp'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
+
+" Map ctrlp to fzf
+nnoremap <C-p> :Files<CR>
+nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>h :History<CR>
+nnoremap <Leader>t :BTags<CR>
+nnoremap <Leader>T :Tags<CR>
+
 
 " Helptags
 filetype plugin indent on       " enable detection, plugins and indenting in one step
