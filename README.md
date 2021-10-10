@@ -36,50 +36,39 @@ Node.js with https://github.com/creationix/nvm#installation
 
 .eslintrc.js (react)
 ```
-module.exports = {
-    root: true,
-    env: {
-        browser: true,
-        node: true,
-        es6: true,
-        jest: true,
-    },
-    plugins: ["prettier"],
-    extends: ["eslint:recommended", "plugin:react/recommended", "prettier"],
-    rules: {
-        "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
-        "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-        "prettier/prettier": [
-            "error",
-            {
-                tabWidth: 4,
-                trailingComma: "es5",
-            },
-        ],
-    },
-    parser: "babel-eslint",
-    parserOptions: {
-        sourceType: "module",
-        ecmaVersion: 6,
-        ecmaFeatures: {
-            jsx: true,
-            modules: true,
-        },
-    },
-    settings: {
-        react: {
-            pragma: "React",
-            version: "detect",
-        },
-    },
-};
+{
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true
+  },
+  "plugins": ["prettier"],
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 4,
+        "trailingComma": "es5"
+      }
+    ]
+  }
+}
 ```
 
 .eslintrc.json (vanilla js)
 ```
 {
   "parserOptions": {
-    "ecmaVersion": 2017
+    "ecmaVersion": 7
   },
   "env": {
     "es6": true
