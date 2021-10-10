@@ -38,7 +38,7 @@ Node.js with https://github.com/creationix/nvm#installation
 ```
 {
   "parserOptions": {
-    "ecmaVersion": 7,
+    "ecmaVersion": 8,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
@@ -68,7 +68,7 @@ Node.js with https://github.com/creationix/nvm#installation
 ```
 {
   "parserOptions": {
-    "ecmaVersion": 7
+    "ecmaVersion": 8
   },
   "env": {
     "es6": true
