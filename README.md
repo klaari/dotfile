@@ -37,6 +37,7 @@ Node.js with https://github.com/creationix/nvm#installation
 .eslintrc.js (react)
 ```
 {
+  "root": true,
   "parserOptions": {
     "ecmaVersion": 8,
     "sourceType": "module",
@@ -67,6 +68,7 @@ Node.js with https://github.com/creationix/nvm#installation
 .eslintrc.json (vanilla js)
 ```
 {
+  "root": true,
   "parserOptions": {
     "ecmaVersion": 8
   },
