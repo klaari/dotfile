@@ -50,12 +50,7 @@ Plugin 'junegunn/fzf.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()
 
-" Map ctrlp to fzf
-nnoremap <C-p> :Files<CR>
-nnoremap <Leader>b :Buffers<CR>
-nnoremap <Leader>h :History<CR>
-nnoremap <Leader>t :BTags<CR>
-nnoremap <Leader>T :Tags<CR>
+
 
 
 " Helptags
@@ -145,6 +140,19 @@ nnoremap k gk
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
+
+" Map W to w
+nnoremap :W :w<cr>
+
+" Map ctrlp to fzf
+nnoremap <C-p> :Files<CR>
+nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>h :History<CR>
+nnoremap <Leader>t :BTags<CR>
+nnoremap <Leader>T :Tags<CR>
+
+" Use ag with fzf, which supports .gitignore
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " Disable ZZ which writes a file and closes vim when you try to hit >>
 map ZZ <nop>
