@@ -11,7 +11,7 @@ call vundle#begin()
 
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'tmhedberg/matchit'
@@ -20,14 +20,14 @@ Plugin 'scrooloose/syntastic'
 "Plugin 'godlygeek/tabular'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'airblade/vim-gitgutter'
+" Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-repeat'
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 Plugin 'epilande/vim-es2015-snippets'
 Plugin 'epilande/vim-react-snippets'
 " Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
 Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
@@ -37,7 +37,7 @@ Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'janko-m/vim-test'
 Plugin 'prettier/vim-prettier'
 Plugin 'nelstrom/vim-visual-star-search'
-Plugin 'w0rp/ale'
+Plugin 'dense-analysis/ale'
 Plugin 'stephpy/vim-php-cs-fixer'
 
 Plugin 'ncm2/ncm2'
@@ -252,15 +252,6 @@ map ,fm :CtrlPMixed<cr>
 " let g:syntastic_check_on_wq = 0
 " let g:syntastic_javascript_checkers = ['eslint']
 
-
-"-----------------------------------------------------------------------------
-" vim-gitgutter
-"-----------------------------------------------------------------------------
-
-let g:gitgutter_max_signs = 900
-let g:gitgutter_realtime = 0
-
-
 "-----------------------------------------------------------------------------
 " NERD Tree Plugin Settings
 "-----------------------------------------------------------------------------
@@ -293,15 +284,24 @@ nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 
 
-" let g:prettier#config#tab_width = 2
-" let g:prettier#config#single_quote = 'false'
-"Run Prettier before saving
-" let g:prettier#autoformat = 1
-" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.html PrettierAsync
+
+"-----------------------------------------------------------------------------
+" ALE
+"-----------------------------------------------------------------------------
+
+let g:ale_javascript_eslint_executable = 'eslint_d'
+let g:ale_javascript_eslint_use_global = 1
+
+" Autofix entire buffer with eslint_d:
+nnoremap <leader>f mF:%!eslint_d --stdin --fix-to-stdout<CR>`F
 
 let g:ale_fixers = {
 \   'vue': ['eslint'],
 \   'javascript': ['eslint'],
+\   'javascript.jsx': ['eslint'],
+\   'typescript': ['eslint'],
+\   'typescriptreact': ['eslint'],
+\   'typescript.tsx': ['eslint'],
 \   'css': ['prettier'],
 \   'scss': ['prettier'],
 \   'html': ['eslint', 'prettier'],
