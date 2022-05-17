@@ -320,11 +320,12 @@ let g:ale_javascript_prettier_use_local_config = 1
 let g:php_cs_fixer_rules = "@PSR2"          " options: --rules (default:@PSR2)
 let g:php_cs_fixer_config_file = '.php_cs' " options: --config
 
+let g:php_cs_fixer_verbose = 1
+let g:php_cs_fixer_path = "vendor/bin/php-cs-fixer" " define the path to the php-cs-fixer.phar
 let g:php_cs_fixer_php_path = "php"               " Path to PHP
 let g:php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by default (<leader>pcd)
 let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
 let g:php_cs_fixer_verbose = 0
-
 
 
 " " Use deoplete.
