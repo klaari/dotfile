@@ -70,7 +70,8 @@ Node.js with https://github.com/creationix/nvm#installation
 {
   "root": true,
   "parserOptions": {
-    "ecmaVersion": 8
+    "ecmaVersion": "latest",
+    "sourceType": "module" // Use ECMAScript modules with node.js
   },
   "env": {
     "es6": true
