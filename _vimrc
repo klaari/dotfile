@@ -1,63 +1,42 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
 set guifont=Monospace\ 12
 
+call plug#begin('~/.vim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
-"
-" let Vundle manage Vundle, required
+Plug 'VundleVim/Vundle.vim'
+Plug 'mileszs/ack.vim'
+Plug 'tmhedberg/matchit'
+Plug 'scrooloose/nerdtree'
+Plug 'tomtom/tcomment_vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'bling/vim-airline'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'skwp/greplace.vim'
+Plug 'arnaud-lb/vim-php-namespace'
+Plug 'janko-m/vim-test'
+" Plug 'prettier/vim-prettier'
+Plug 'nelstrom/vim-visual-star-search'
+Plug 'dense-analysis/ale'
+Plug 'stephpy/vim-php-cs-fixer'
+Plug 'sheerun/vim-polyglot'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+" Plug 'ncm2/ncm2'
+" Plug 'roxma/nvim-yarp'
+" Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'godlygeek/tabular'
+" Plug 'ervandew/supertab'
+" Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
+" Plug 'airblade/vim-gitgutter'
+" Plug 'tpope/vim-fugitive'
 
+call plug#end()
 
-Plugin 'VundleVim/Vundle.vim'
-" Plugin 'tpope/vim-fugitive'
-Plugin 'mileszs/ack.vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'tmhedberg/matchit'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-"Plugin 'godlygeek/tabular'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'altercation/vim-colors-solarized'
-" Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-repeat'
-" Plugin 'SirVer/ultisnips'
-Plugin 'epilande/vim-es2015-snippets'
-Plugin 'epilande/vim-react-snippets'
-" Plugin 'honza/vim-snippets'
-Plugin 'tpope/vim-surround'
-" Plugin 'ervandew/supertab'
-Plugin 'bling/vim-airline'
-Plugin 'majutsushi/tagbar'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'skwp/greplace.vim'
-Plugin 'arnaud-lb/vim-php-namespace'
-Plugin 'janko-m/vim-test'
-Plugin 'prettier/vim-prettier'
-Plugin 'nelstrom/vim-visual-star-search'
-Plugin 'dense-analysis/ale'
-Plugin 'stephpy/vim-php-cs-fixer'
-
-Plugin 'ncm2/ncm2'
-Plugin 'roxma/nvim-yarp'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-" Plugin 'ctrlpvim/ctrlp.vim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()
-
-
-
-
-" Helptags
-filetype plugin indent on       " enable detection, plugins and indenting in one step
 syntax on
 
 let $PATH=substitute(system("echo \$PATH"), "\r\*\n", "", "g")
@@ -239,21 +218,6 @@ map ,fb :CtrlPBuffer<cr>
 map ,ff :CtrlPCurFile<cr>
 map ,fr :CtrlP<cr>
 map ,fm :CtrlPMixed<cr>
-
-
-
-"-----------------------------------------------------------------------------
-" Syntastic recommended defaults
-"-----------------------------------------------------------------------------
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-"
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_javascript_checkers = ['eslint']
 
 "-----------------------------------------------------------------------------
 " NERD Tree Plugin Settings
