@@ -49,7 +49,5 @@ link_file _swp
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
-cd _vim/bundle/vim-prettier/
-npm install
 
 
