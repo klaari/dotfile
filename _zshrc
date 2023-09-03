@@ -73,6 +73,8 @@ alias boxssh='cd /home/ktl/Code/scotchbox/ && vagrant ssh && cd -'
 
 alias phpunit="./vendor/phpunit/phpunit/phpunit"
 
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
 setopt incappendhistory 
