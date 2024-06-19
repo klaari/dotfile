@@ -241,39 +241,6 @@ nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 
 
-"
-" "-----------------------------------------------------------------------------
-" " ALE
-" "-----------------------------------------------------------------------------
-"
-" let g:ale_javascript_eslint_executable = 'eslint_d'
-" let g:ale_javascript_eslint_use_global = 1
-"
-" " Autofix entire buffer with eslint_d:
-" nnoremap <leader>f mF:%!eslint_d --stdin --fix-to-stdout<CR>`F
-"
-" let g:ale_fixers = {
-" \   'vue': ['eslint'],
-" \   'javascript': ['eslint'],
-" \   'javascript.jsx': ['eslint'],
-" \   'typescript': ['eslint'],
-" \   'typescriptreact': ['eslint'],
-" \   'typescript.tsx': ['eslint'],
-" \   'css': ['prettier'],
-" \   'scss': ['prettier'],
-" \   'html': ['eslint', 'prettier'],
-" \   'json': ['prettier'],
-" \}
-"
-" let g:ale_linter_aliases = {'vue': ['vue', 'javascript']}
-" let g:ale_linters = {'vue': ['eslint', 'vls'], 'javascript': ['eslint']}
-"
-" let g:ale_linters_explicit = 1
-" let g:ale_fix_on_save = 1
-" let g:ale_sign_error = '●'
-" let g:ale_sign_warning = '.'
-" let g:ale_javascript_prettier_use_local_config = 1
-
 let g:php_cs_fixer_rules = "@PSR2"          " options: --rules (default:@PSR2)
 let g:php_cs_fixer_config_file = '.php_cs' " options: --config
 
