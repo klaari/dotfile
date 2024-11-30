@@ -23,6 +23,12 @@ fzf
 
     sudo apt-get install fzf
 
+diff-so-fancy
+
+    sudo add-apt-repository ppa:aos1/diff-so-fancy
+    sudo apt update
+    sudo apt install diff-so-fancy
+
 Node.js with https://github.com/creationix/nvm#installation
 
 #### eslint & prettier
