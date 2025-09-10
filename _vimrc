@@ -24,6 +24,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'github/copilot.vim'
+Plug 'madox2/vim-ai'
+
 
 call plug#end()
 
