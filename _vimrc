@@ -21,9 +21,10 @@ Plug 'janko-m/vim-test'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'stephpy/vim-php-cs-fixer'
 Plug 'sheerun/vim-polyglot'
+Plug 'wuelnerdotexe/vim-astro'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 Plug 'madox2/vim-ai'
 
 
